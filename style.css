@@ -10,10 +10,33 @@ html {
   font-family: "Lato", sans-serif;
 }
 h1 {
+  z-index: 2;
   margin: 0;
   padding: 30px;
   text-align: center;
   font-size: 5em;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background: -moz-linear-gradient(
+    top,
+    rgba(47, 50, 50, 1) 0%,
+    rgba(47, 50, 50, 1) 75%,
+    rgba(47, 50, 50, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(47, 50, 50, 1) 0%,
+    rgba(47, 50, 50, 1) 75%,
+    rgba(47, 50, 50, 0) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(47, 50, 50, 1) 0%,
+    rgba(47, 50, 50, 1) 75%,
+    rgba(47, 50, 50, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3232', endColorstr='#002f3232',GradientType=0 );
 }
 li {
   display: block;
@@ -28,7 +51,7 @@ li {
   z-index: 1;
 }
 ul {
-  padding: 0 0 50px 0;
+  padding: 200px 0 100px 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
