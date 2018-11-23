@@ -87,6 +87,7 @@ function renderLine(index) {
     line.style.left = `${xm - distance / 2 - 2}px`;
     line.style.transform = `rotate(${angleInDegrees}deg)`;
     line.style.borderColor = bgColor;
+    line.style.backgroundColor = bgColor;
     document.body.appendChild(line);
   }
 }
