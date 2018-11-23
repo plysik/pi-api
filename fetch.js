@@ -75,21 +75,17 @@ function renderLine(index) {
     let ya = (a.bottom + a.top) / 2;
     let xb = (b.right + b.left) / 2;
     let yb = (b.bottom + b.top) / 2;
-    // let xa = a.left;
-    // let ya = a.top;
-    // let xb = b.left;
-    // let yb = b.top;
     let distance = Math.sqrt((xa - xb) * (xa - xb) + (ya - yb) * (ya - yb));
     let xm = (xa + xb) / 2;
     let ym = (ya + yb) / 2;
-    let salopeInRadian = Math.atan2(ya - yb, xa - xb);
-    let salopeInDegrees = (salopeInRadian * 180) / Math.PI;
+    let angleInRadian = Math.atan2(ya - yb, xa - xb);
+    let angleInDegrees = (angleInRadian * 180) / Math.PI;
     let line = document.createElement("div");
     line.classList.add("line");
     line.style.width = `${distance}px`;
     line.style.top = `${ym}px`;
     line.style.left = `${xm - distance / 2 - 2}px`;
-    line.style.transform = `rotate(${salopeInDegrees}deg)`;
+    line.style.transform = `rotate(${angleInDegrees}deg)`;
     line.style.borderColor = bgColor;
     document.body.appendChild(line);
   }
