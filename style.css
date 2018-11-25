@@ -9,6 +9,14 @@
 html {
   font-family: "Lato", sans-serif;
 }
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #2f3232;
+  overflow-y: scroll;
+}
 h1 {
   z-index: 2;
   margin: 0;
@@ -55,14 +63,6 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-}
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background-color: #2f3232;
-  overflow-y: scroll;
 }
 .line {
   position: absolute;
