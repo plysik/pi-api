@@ -1,0 +1,9 @@
+{
+  "short_name": "Colors of Π",
+  "name": "App generating poster like layout based on matching colors with Π's digits",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}
