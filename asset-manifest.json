@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/plysik.github.io/pi-api/static/css/main.461791cb.css",
+    "main.js": "/plysik.github.io/pi-api/static/js/main.f4b81cf5.js",
+    "index.html": "/plysik.github.io/pi-api/index.html",
+    "main.461791cb.css.map": "/plysik.github.io/pi-api/static/css/main.461791cb.css.map",
+    "main.f4b81cf5.js.map": "/plysik.github.io/pi-api/static/js/main.f4b81cf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.461791cb.css",
+    "static/js/main.f4b81cf5.js"
+  ]
+}
