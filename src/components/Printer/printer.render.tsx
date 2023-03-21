@@ -3,7 +3,12 @@ import Row from "../Row";
 import { getLineStyle } from './printer.helpers';
 
 export const render = {
-    Lines: (piArray: string[][], pairs: number[][][]) => pairs.map((line, index) => <li className='line' key={`line-${index}`} style={getLineStyle(piArray, line)} > </li>),
+    Lines: (piArray: string[][], pairs: number[][][]) => {
+        // return () => {
+        return pairs.map((line, index) => <li className='line' key={`line-${index}`} style={getLineStyle(piArray, line)} > </li>);
+        // };
+    },
+
     Rows: (piArray: string[][]) => {
         const renderChar = (char: string, index: number, rowIndex: number) => <Char key={`char-${rowIndex}-${index}`} char={char} ></Char>;
         const renderChars = (rowIndex: number) => {
