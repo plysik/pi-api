@@ -27,6 +27,7 @@ h1 {
   padding   : 30px;
   text-align: center;
   font-size : 5em;
+  position  : fixed;
   width     : 100%;
   box-sizing: border-box;
   background: -moz-linear-gradient(top,
@@ -73,7 +74,7 @@ ul {
 .pi-lines {
   display       : inline-flex;
   flex-direction: column;
-  margin        : 0 auto 100px;
+  margin        : 200px auto 100px;
   position      : relative;
 }
 
